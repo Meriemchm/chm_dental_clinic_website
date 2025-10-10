@@ -5,10 +5,10 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col-reverse items-center justify-center gap-6 lg:flex-row lg:justify-between">
+    <div className="flex flex-col-reverse items-center justify-center lg:flex-row lg:justify-between">
       {/* Texte */}
       <div className="flex flex-col items-center text-center gap-4 lg:items-start lg:text-left">
-        <h1 className="text-xl md:text-4xl lg:text-5xl font-bold text-primary">
+        <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-primary">
           <span className="text-black">Your</span> Smile,{" "}
           <span className="text-black">Our</span> Passion
         </h1>
