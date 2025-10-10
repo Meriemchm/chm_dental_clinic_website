@@ -1,6 +1,6 @@
 # Dental Clinic Website
 
-Welcome to the **Dental Clinic** website – a modern, responsive platform designed to showcase a dental services and connect with patients easily.  
+Welcome to the **Dental Clinic** website, a modern, responsive platform designed to showcase a dental services and connect with patients easily.  
 
 ---
 
