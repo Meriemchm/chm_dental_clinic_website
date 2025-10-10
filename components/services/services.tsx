@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../ui/button";
 
-import { Service } from "./service";
+import  Service  from "./service";
 
 const Services = () => {
   return (

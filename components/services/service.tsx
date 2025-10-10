@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
-export const Service = () => {
+const Service = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center justify-between">
       {ServicesData.map((item, index) => (
@@ -48,3 +48,5 @@ export const Service = () => {
     </div>
   );
 };
+
+export  default Service;
