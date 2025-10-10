@@ -8,7 +8,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <button
         className={cn(
-          "bg-primary px-4 py-2 text-white rounded-full hover:bg-primary/90 transition text-sm md:text-base",
+          "bg-primary px-4 py-3 text-white rounded-full hover:bg-primary/90 transition text-sm md:text-base",
           className
         )}
         disabled={disabled}
