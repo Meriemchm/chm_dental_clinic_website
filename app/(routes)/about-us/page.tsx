@@ -1,4 +1,5 @@
 import About from "@/components/about/about";
+import Appointment from "@/components/appointment/appointment";
 import { Container } from "@/components/ui/container";
 import HearderTitle from "@/components/ui/hearderTitleSection";
 import React from "react";
@@ -13,6 +14,7 @@ const AboutUsPage = () => {
           <About />{" "}
         </Container>{" "}
       </div>
+      <Appointment />
     </div>
   );
 };

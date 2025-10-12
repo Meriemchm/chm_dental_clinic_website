@@ -3,6 +3,7 @@ import { Container } from "../../components/ui/container";
 import Hero from "@/components/hero/hero";
 import About from "@/components/about/about";
 import Services from "@/components/services/services";
+import Appointment from "@/components/appointment/appointment";
 
 const Home = () => {
   return (
@@ -24,6 +25,8 @@ const Home = () => {
           <Services />
         </Container>{" "}
       </div>
+
+      <Appointment />
     </>
   );
 };

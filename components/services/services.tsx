@@ -19,7 +19,7 @@ const Services = () => {
         <Button className="text-sm md:text-base">Explore All Services</Button>
       </div>
       {/*services*/}
-      <Service />;
+      <Service />
     </div>
   );
 };

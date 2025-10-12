@@ -1,27 +1,34 @@
-import { FooterData } from "@/Data/data";
+import { FooterData } from "@/data/data";
 import React from "react";
 
-const FooterColumn = () => {
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-      {FooterData.map((items, index) => (
-        <div key={index} className="flex flex-col gap-4">
-          <h3 className="text-white font-semibold text-lg">{items.title}</h3>
+interface FooterColumnProps {
+  showFirstColumn?: boolean;
+}
 
-          <div className="flex flex-col gap-2">
-            {items.details &&
-              items.details.map((item, index) => (
+const FooterColumn: React.FC<FooterColumnProps> = ({ showFirstColumn = true }) => {
+  return (
+    <>
+      {FooterData.map((items, index) => {
+
+        if (index === 0 && !showFirstColumn) return null;
+        return (
+          <div key={index} className="flex flex-col gap-4 w-full">
+            <h3 className="text-white font-semibold text-lg">{items.title}</h3>
+
+            <div className="flex flex-col gap-2">
+              {items.details?.map((item, i) => (
                 <div
-                  key={index}
+                  key={i}
                   className="text-neutral-200 hover:text-white transition-colors"
                 >
                   {item.content}
                 </div>
               ))}
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        );
+      })}
+    </>
   );
 };
 

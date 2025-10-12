@@ -111,3 +111,40 @@ export const FooterData = [
     ],
   },
 ];
+
+export const SocialMediaData = [
+  {
+    id: 1,
+    name: "Facebook",
+    icon: "/Icons/Facebook.svg",
+    link: "",
+  },
+
+  {
+    id: 2,
+
+    name: "Instagram",
+    icon: "/Icons/Instagram.svg",
+
+    link: "",
+  },
+  {
+    id: 3,
+
+    name: "LinkedIn",
+    icon: "/Icons/LinkedIn.svg",
+
+    link: "",
+  },
+];
+
+export const AppointmentTypeData = [
+  { value: "checkup", label: "Dental Checkup" },
+  { value: "cleaning", label: "Teeth Cleaning" },
+  { value: "whitening", label: "Teeth Whitening" },
+];
+
+export const PreferredDentistData = [
+  { value: "Ahmed Sadiki", label: "Dr. Ahmed Sadiki" },
+  { value: "Ines Abdallah", label: "Dr. Ines Abdallah" },
+];

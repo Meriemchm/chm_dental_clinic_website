@@ -1,5 +1,5 @@
 import React from "react";
-import { ServicesData } from "@/Data/data";
+import { ServicesData } from "@/data/data";
 import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
@@ -49,4 +49,4 @@ const Service = () => {
   );
 };
 
-export  default Service;
+export default Service;

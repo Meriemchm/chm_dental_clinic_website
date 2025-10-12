@@ -2,6 +2,7 @@ import React from "react";
 import { Container } from "../ui/container";
 import Image from "next/image";
 import FooterColumn from "./footercolum";
+import SocialMediaIcons from "../ui/socialMediaIcons";
 
 const Footer = () => {
   return (
@@ -21,9 +22,12 @@ const Footer = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
                 molestiae ab similique facilis architecto laboriosam.
               </p>
+              <SocialMediaIcons className="filter brightness-0 " />
             </div>
             <div className="col-span-2">
-              <FooterColumn />
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <FooterColumn />{" "}
+              </div>
             </div>
           </div>
         </Container>

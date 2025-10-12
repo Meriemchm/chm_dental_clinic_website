@@ -1,6 +1,6 @@
 "use client";
 
-import { NavbarItems } from "@/Data/data";
+import { NavbarItems } from "@/data/data";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -39,7 +39,11 @@ const Navbar = () => {
                 </Link>
               </div>
             ))}
-            <Button>Book Now</Button>
+
+            <Button>
+              {" "}
+              <Link href="/book-an-appointment">Book Now</Link>
+            </Button>
           </div>
         </div>
 
@@ -86,7 +90,12 @@ const Navbar = () => {
                 </Link>
               </div>
             ))}
-            <Button>Book Now</Button>
+            <Button>
+              {" "}
+              <Link href="/book-an-appointment" onClick={() => isOpen(!open)}>
+                Book Now
+              </Link>
+            </Button>
           </div>
         )}
       </Container>
