@@ -29,12 +29,12 @@ const AppointmentInfo = () => {
 
       <div className="flex space-x-6 rounded-xl p-5 border border-neutral-200 items-center justify-start">
         <div className="rounded-full bg-primary/10 p-4">
-          <Image src="/Icons/phone.svg" alt="phone" height={25} width={25} />
+          <Image src="/Icons/phone.svg" alt="phone" height={25} width={25} className="w-5 h-5 md:h-auto md:w-auto" />
         </div>
 
         <div className="flex flex-col">
           <p className=" capitalize text-neutral-500 ">your smile, our priority</p>
-          <p className="text-2xl font-bold">24/7 Emergency</p>
+          <p className="md:text-2xl text-lg font-bold">24/7 Emergency</p>
           <p className="text-neutral-400 pt-2">+213 500 00 00 00</p>
         </div>
       </div>
