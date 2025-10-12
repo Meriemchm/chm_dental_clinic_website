@@ -37,7 +37,7 @@ const InputField = <T extends FieldValues>({
         <textarea
           {...register(name)}
           placeholder={placeholder}
-          className="w-full border rounded-lg p-3 resize-none"
+          className="w-full border border-neutral-200 rounded-lg p-3 resize-none"
           rows={5}
         />
       ) : (
