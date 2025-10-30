@@ -1,7 +1,6 @@
 import HearderTitle from "@/components/ui/hearderTitleSection";
 import React from "react";
 import ServicesContainer from "./components/servicesContainer";
-import { Container } from "@/components/ui/container";
 import Appointment from "@/components/appointment/appointment";
 
 const ServicesPage = () => {
