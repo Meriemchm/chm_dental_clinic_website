@@ -1,6 +1,6 @@
 "use client";
 
-import { NavbarItems } from "@/data/data";
+import { NavbarItems } from "@/components/data/data";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";

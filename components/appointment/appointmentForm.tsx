@@ -3,7 +3,10 @@
 import Button from "@/components/ui/button";
 import InputField from "@/components/ui/InputField";
 import SelectField from "@/components/ui/selectField";
-import { AppointmentTypeData, PreferredDentistData } from "@/data/data";
+import {
+  AppointmentTypeData,
+  PreferredDentistData,
+} from "@/components/data/data";
 import {
   AppointmentFormData,
   appointmentSchema,

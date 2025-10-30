@@ -1,15 +1,16 @@
-import { FooterData } from "@/data/data";
+import { FooterData } from "@/components/data/data";
 import React from "react";
 
 interface FooterColumnProps {
   showFirstColumn?: boolean;
 }
 
-const FooterColumn: React.FC<FooterColumnProps> = ({ showFirstColumn = true }) => {
+const FooterColumn: React.FC<FooterColumnProps> = ({
+  showFirstColumn = true,
+}) => {
   return (
     <>
       {FooterData.map((items, index) => {
-
         if (index === 0 && !showFirstColumn) return null;
         return (
           <div key={index} className="flex flex-col gap-4 w-full">

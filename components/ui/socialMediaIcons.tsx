@@ -1,4 +1,4 @@
-import { SocialMediaData } from "@/data/data";
+import { SocialMediaData } from "@/components/data/data";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
@@ -6,12 +6,12 @@ import Image from "next/image";
 
 interface SocialMediaIconsProps {
   className?: string;
-  size?:number;
+  size?: number;
 }
 
 const SocialMediaIcons: React.FC<SocialMediaIconsProps> = ({
   className = "",
-  size=16,
+  size = 16,
 }) => {
   return (
     <div className="flex gap-2">
@@ -27,7 +27,12 @@ const SocialMediaIcons: React.FC<SocialMediaIconsProps> = ({
               rel="noopener noreferrer"
               className={cn(className)}
             >
-              <Image src={item.icon} alt={item.name} height={size} width={size} />
+              <Image
+                src={item.icon}
+                alt={item.name}
+                height={size}
+                width={size}
+              />
             </Link>{" "}
           </div>
         </div>

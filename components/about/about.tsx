@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { AboutItems } from "@/data/data";
+import { AboutItems } from "@/components/data/data";
 import Button from "../ui/button";
 
 const About = () => {
