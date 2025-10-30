@@ -20,7 +20,6 @@ const AppointmentForm = () => {
     register,
     handleSubmit,
     formState: { errors },
-    reset,
   } = useForm<AppointmentFormData>({
     resolver: zodResolver(appointmentSchema),
   });

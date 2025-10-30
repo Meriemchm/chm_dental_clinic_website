@@ -8,6 +8,7 @@ interface SelectFieldProps {
   label: string;
   name: string;
   options: { value: string; label: string }[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   register: UseFormRegister<any>;
   error?: FieldError;
 }
