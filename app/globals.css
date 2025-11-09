@@ -34,7 +34,7 @@ input[type="date"],
 input[type="time"] {
   appearance: none; /* supprime le style iOS par défaut */
   -webkit-appearance: none;
-  background-color: #fff;
+  background-color: #5b1414;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   padding: 0.5rem;
