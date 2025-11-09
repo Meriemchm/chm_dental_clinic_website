@@ -88,6 +88,9 @@ const AppointmentForm = () => {
           label="Preferred Time"
           name="preferredTime"
           type="time"
+          min="08:00"
+          max="22:00"
+          step={1800}
           register={register}
           error={errors.preferredTime}
         />

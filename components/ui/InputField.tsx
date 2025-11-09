@@ -14,6 +14,9 @@ interface InputFieldProps<T extends FieldValues> {
   error?: FieldError;
   textarea?: boolean;
   placeholder?: string;
+  min?:string;
+  max?:string;
+  step?:number;
 }
 
 const InputField = <T extends FieldValues>({
@@ -24,6 +27,9 @@ const InputField = <T extends FieldValues>({
   error,
   textarea = false,
   placeholder,
+  min,
+  max,
+  step,
 }: InputFieldProps<T>) => {
   return (
     <div className="flex flex-col gap-1">
@@ -45,6 +51,10 @@ const InputField = <T extends FieldValues>({
           type={type}
           {...register(name)}
           placeholder={placeholder}
+          disabled={type === "time" && (!min || !max)}
+          min={min}
+          max={max}
+          step={step}
           className="w-full border border-neutral-200 rounded-lg p-3"
         />
       )}
