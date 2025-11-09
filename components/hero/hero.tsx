@@ -1,13 +1,18 @@
+'use client';
 import Image from "next/image";
 import React from "react";
 import Button from "../ui/button";
 import Link from "next/link";
+import { useGsapFade } from "@/hooks/gsap-animations";
 
 const Hero = () => {
+
+  const fadeleft = useGsapFade("left");
+  const faderight = useGsapFade("right");
   return (
     <div className="flex flex-col-reverse items-center justify-center lg:flex-row lg:justify-between">
       {/* Texte */}
-      <div className="flex flex-col items-center text-center gap-4 lg:items-start lg:text-left">
+      <div ref={fadeleft} className="flex flex-col items-center text-center gap-4 lg:items-start lg:text-left">
         <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-primary">
           <span className="text-black">Your</span> Smile,{" "}
           <span className="text-black">Our</span> Passion
@@ -27,7 +32,7 @@ const Hero = () => {
       </div>
 
       {/* Image Hero */}
-      <div className="relative">
+      <div ref={faderight} className="relative">
         <div
           className="absolute rounded-full bg-primary 
                   w-72 h-72

@@ -1,12 +1,15 @@
+'use client';
 import React from "react";
 import Button from "../ui/button";
 
-import  Service  from "./service";
+import Service from "./service";
+import { useGsapFade } from "@/hooks/gsap-animations";
 
 const Services = () => {
+  const fadeup = useGsapFade("up");
   return (
     <div className="flex flex-col gap-16 my-20">
-      <div className="flex w-full items-center justify-between flex-wrap gap-4">
+      <div ref={fadeup} className="flex w-full items-center justify-between flex-wrap gap-4">
         <div className="flex flex-col gap-4">
           <p className="uppercase text-black">Our Services</p>
 

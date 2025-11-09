@@ -1,20 +1,26 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import { AboutItems } from "@/components/data/data";
 import Button from "../ui/button";
+import { useGsapFade } from "@/hooks/gsap-animations";
 
 const About = () => {
+  const fadeleft = useGsapFade("left");
+  const faderight = useGsapFade("right");
   return (
     <div className="flex md:flex-row flex-col-reverse gap-12   items-center justify-between md:gap-6">
-      <Image
-        src="/Images/about_us_picture.png"
-        alt="about-us-pic"
-        width={500}
-        height={500}
-        className="w-[400px] md:w-[500px] h-auto object-contain"
-      />
+      <div ref={fadeleft}>
+        <Image
+          src="/Images/about_us_picture.png"
+          alt="about-us-pic"
+          width={500}
+          height={500}
+          className="w-[400px] md:w-[500px] h-auto object-contain"
+        />
+      </div>
 
-      <div className="flex flex-col gap-4 max-w-lg">
+      <div ref={faderight} className="flex flex-col gap-4 max-w-lg">
         <p className="text-xl font-bold text-black">About Us</p>
         <h1 className="text-4xl mb-4 capitalize font-bold text-primary">
           15 yeras of expertise{" "}

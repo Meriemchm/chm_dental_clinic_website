@@ -8,8 +8,11 @@ import { ContactFormData, contactSchema } from "@/schemas/contactSchema";
 import InputField from "@/components/ui/InputField";
 import Button from "@/components/ui/button";
 import toast from "react-hot-toast";
+import { useGsapFade } from "@/hooks/gsap-animations";
 
 const ContactForm = () => {
+  const fadeleft = useGsapFade("left");
+
   const [isSending, setIsSending] = useState(false);
 
   const {
@@ -29,8 +32,8 @@ const ContactForm = () => {
     setIsSending(true);
     emailjs
       .send(
-         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
         {
           from_name: `${data.firstName} ${data.lastName}`,
           from_email: data.email,
@@ -38,7 +41,7 @@ const ContactForm = () => {
           subject: data.subject,
           message: data.message,
         },
-         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       )
       .then(() => {
         setIsSending(false);
@@ -56,6 +59,7 @@ const ContactForm = () => {
     <form
       onSubmit={handleSubmit(onSubmit)}
       className="p-6 bg-white rounded-2xl space-y-4"
+      ref={fadeleft}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <InputField

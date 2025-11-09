@@ -1,10 +1,13 @@
+'use client'
 import Service from "@/components/services/service";
 import { Container } from "@/components/ui/container";
+import { useGsapFade } from "@/hooks/gsap-animations";
 import React from "react";
 
 const ServicesContainer = () => {
+  const fadeup = useGsapFade("up");
   return (
-    <div className="bg-white py-24">
+    <div ref={fadeup} className="bg-white py-24">
       <Container>
         <div className="flex flex-col gap-4 items-center justify-center">
           <p className="uppercase text-black">Our Services</p>

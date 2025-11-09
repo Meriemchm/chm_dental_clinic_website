@@ -7,7 +7,7 @@ import Appointment from "@/components/appointment/appointment";
 
 const Home = () => {
   return (
-    <>
+    <div className="overflow-hidden">
       <div className="min-h-screen bg-neutral-100">
         <Container className="py-24">
           <Hero />
@@ -27,7 +27,7 @@ const Home = () => {
       </div>
 
       <Appointment />
-    </>
+    </div>
   );
 };
 

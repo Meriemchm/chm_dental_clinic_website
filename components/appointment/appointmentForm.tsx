@@ -16,8 +16,10 @@ import {
   appointmentSchema,
 } from "@/schemas/appointmentSchema";
 import toast from "react-hot-toast";
+import { useGsapFade } from "@/hooks/gsap-animations";
 
 const AppointmentForm = () => {
+  const fadeleft = useGsapFade("left");
   const {
     register,
     handleSubmit,
@@ -45,6 +47,7 @@ const AppointmentForm = () => {
     <form
       onSubmit={handleSubmit(onSubmit)}
       className=" bg-white rounded-2xl space-y-4"
+      ref={fadeleft}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <InputField
