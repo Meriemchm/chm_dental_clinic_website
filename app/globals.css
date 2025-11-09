@@ -29,3 +29,15 @@ body {
   color: var(--foreground);
   font-family: "Raleway", sans-serif;
 }
+
+input[type="date"],
+input[type="time"] {
+  appearance: none; /* supprime le style iOS par défaut */
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 16px; /* important pour éviter le zoom sur iPhone */
+}
