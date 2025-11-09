@@ -60,5 +60,37 @@ GOOGLE_REFRESH_TOKEN=your_google_refresh_token
 NEXT_PUBLIC_BASE_URL=http://localhost:3000
 ```
 
+## Folder Structure (optional but useful)
+
+- `components/` – Reusable components (Navbar, Buttons, etc.)  
+- `app/` – Website pages (Home, Services, Contact, etc.)   
+- `public/` – Static files such as images, icons, and assets
+- `schemas/` – Data schemas or models used in the project  
+- `app/api/` – API routes for handling backend requests  
+
+---
+
+## Contributing
+
+Contributions are welcome! To contribute to this project:  
+
+1. **Fork** the repository  
+2. **Create a new branch** for your feature or bugfix  
+   ```bash
+   git checkout -b feature/your-feature-name
+    ```
+3. Commit your changes
+   ```bash
+   git commit -m "Add a descriptive commit message"
+    ```
+4. Push to your branch
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. Open a Pull Request in the original repository
+   Make sure your code follows the project’s coding style and is well-tested before submitting a PR.
+   
+
+
 
 
