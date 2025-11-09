@@ -74,11 +74,13 @@ export async function POST(req: Request) {
     return NextResponse.json({
       message: "Appointment added to Google Calendar",
     });
-  } catch (error: any) {
-    console.error("Error Google Calendar:", JSON.stringify(error, null, 2));
-    return NextResponse.json(
-      { error: "Error while adding event", details: error.message },
-      { status: 500 }
-    );
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      console.error("Google Calendar error:", error.message);
+      return NextResponse.json({ error: error.message }, { status: 500 });
+    } else {
+      console.error("Google Calendar unknown error:", error);
+      return NextResponse.json({ error: "Unknown error" }, { status: 500 });
+    }
   }
 }
