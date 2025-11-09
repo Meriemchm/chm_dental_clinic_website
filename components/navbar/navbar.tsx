@@ -77,7 +77,7 @@ const Navbar = () => {
         {/*Mobile Menu*/}
 
         {open && (
-          <div className=" h-screen bg-white text-black flex flex-col items-center justify-center gap-8">
+          <div className="h-screen bg-white text-black flex flex-col items-center justify-center gap-8 pb-34">
             {/*NavItems*/}
             {NavbarItems.map((item, index) => (
               <div key={index} className="flex items-center capitalize text-xl">
