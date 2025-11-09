@@ -3,8 +3,6 @@ import fs from "fs";
 import path from "path";
 import { NextResponse } from "next/server";
 
-console.log("route.ts: create-event");
-
 // create google calendar event
 
 export async function POST(req: Request) {

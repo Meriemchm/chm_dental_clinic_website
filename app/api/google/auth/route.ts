@@ -1,6 +1,4 @@
 import { google } from "googleapis";
-import fs from "fs";
-import path from "path";
 import { NextResponse } from "next/server";
 
 // generate url to ask for google permissions
