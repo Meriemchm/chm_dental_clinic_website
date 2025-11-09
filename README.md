@@ -1,6 +1,7 @@
 # Dental Clinic Website
 
-Welcome to the Dental Clinic website, a modern and responsive platform designed to showcase dental services, connect with patients easily through an integrated contact system using EmailJS, and manage appointments efficiently via the Google Calendar API.
+Welcome to the **Dental Clinic website**, a modern and responsive platform designed to showcase dental services, connect with patients easily through an integrated contact system using EmailJS, and manage appointments efficiently via the Google Calendar API.
+
 ---
 
 ## Technologies Used
