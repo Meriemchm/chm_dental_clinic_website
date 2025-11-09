@@ -10,7 +10,8 @@ Welcome to the **Dental Clinic** website, a modern, responsive platform designed
 - **React** – Component-based architecture  
 - **Tailwind CSS** – Utility-first CSS for rapid UI development  
 - **Next/Image** – Optimized image handling for faster loading  
-- **Custom Components** – Reusable buttons, containers, and navbar  
+- **Custom Components** – Reusable buttons, containers, and navbar
+- **Google API (Calendar)** – Integration for scheduling and managing appointments
 
 ---
 
