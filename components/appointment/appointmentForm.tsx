@@ -36,7 +36,7 @@ const AppointmentForm = () => {
       body: JSON.stringify(data),
     }).then(() => {
       setIsSending(false);
-      toast.success("Appointment sent successfully!");
+      toast.success("Appointment sent successfully! you will get a call soon.");
       reset();
     });
   };
