@@ -7,24 +7,40 @@ import {
   AppointmentTypeData,
   PreferredDentistData,
 } from "@/components/data/data";
+
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
 import {
   AppointmentFormData,
   appointmentSchema,
 } from "@/schemas/appointmentSchema";
-import { zodResolver } from "@hookform/resolvers/zod";
-import React from "react";
-import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 
 const AppointmentForm = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<AppointmentFormData>({
     resolver: zodResolver(appointmentSchema),
   });
+  const [isSending, setIsSending] = useState(false);
 
-  const onSubmit = (data: AppointmentFormData) => {};
+  const onSubmit = async (data: AppointmentFormData) => {
+    setIsSending(true);
+    await fetch("/api/google/create-event", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    }).then(() => {
+      setIsSending(false);
+      toast.success("Appointment sent successfully!");
+      reset();
+    });
+  };
+
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
@@ -83,7 +99,9 @@ const AppointmentForm = () => {
         register={register}
         error={errors.notes}
       />
-      <Button className="mt-5">Book an Appointment</Button>
+      <Button type="submit" disabled={isSending} className="mt-5 ">
+        Book an Appointment
+      </Button>
     </form>
   );
 };

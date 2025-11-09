@@ -139,9 +139,9 @@ export const SocialMediaData = [
 ];
 
 export const AppointmentTypeData = [
-  { value: "checkup", label: "Dental Checkup" },
-  { value: "cleaning", label: "Teeth Cleaning" },
-  { value: "whitening", label: "Teeth Whitening" },
+  { value: "dental checkup", label: "Dental Checkup" },
+  { value: "teeth cleaning", label: "Teeth Cleaning" },
+  { value: "teeth whitening", label: "Teeth Whitening" },
 ];
 
 export const PreferredDentistData = [

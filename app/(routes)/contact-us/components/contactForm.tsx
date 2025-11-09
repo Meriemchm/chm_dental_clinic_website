@@ -29,8 +29,8 @@ const ContactForm = () => {
     setIsSending(true);
     emailjs
       .send(
-        "service_7k4dhdq",
-        "template_6envny1",
+         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
         {
           from_name: `${data.firstName} ${data.lastName}`,
           from_email: data.email,
@@ -38,7 +38,7 @@ const ContactForm = () => {
           subject: data.subject,
           message: data.message,
         },
-        "4IodSNiVqUKTBzes1"
+         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       )
       .then(() => {
         setIsSending(false);
