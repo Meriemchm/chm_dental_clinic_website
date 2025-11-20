@@ -6,6 +6,7 @@
   --foreground: #171717;
   --primary: #1e3fff;
   --secondary: #0c1f41;
+  --thirdary: #f0f9ff;
 }
 
 @theme inline {
@@ -13,6 +14,7 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
+  --color-thirdary: var(--thirdary);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
