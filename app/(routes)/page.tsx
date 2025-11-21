@@ -16,13 +16,13 @@ const Home = () => {
       </div>
 
       <div className="min-h-screen bg-white">
-        <Container className="py-24">
+        <Container className="py-4">
           <About />{" "}
         </Container>{" "}
       </div>
 
       <div className="min-h-screen bg-neutral-50">
-        <Container className="py-24">
+        <Container className="py-4">
           <Services />
         </Container>{" "}
       </div>

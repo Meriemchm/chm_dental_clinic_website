@@ -19,10 +19,10 @@ const Service = () => {
           )}
           ref={(el) => fadeup(el, index)}
         >
-          <div className="bg-primary rounded-full p-4">
+          <div className="bg-primary rounded-full p-2 md:p-4">
             <Image src={item.icon} alt={item.title} height={50} width={50} />
           </div>
-          <h3 className="text-2xl text-black font-semibold mb-2">
+          <h3 className="md:text-2xl text-xl text-black font-semibold mb-2">
             {item.title}
           </h3>
           <p className="text-neutral-500 text-sm md:text-base">
