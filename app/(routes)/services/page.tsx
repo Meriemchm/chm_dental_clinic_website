@@ -5,7 +5,7 @@ import Appointment from "@/components/appointment/appointment";
 
 const ServicesPage = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <HearderTitle title="Services" url="services" />
 
       <ServicesContainer />

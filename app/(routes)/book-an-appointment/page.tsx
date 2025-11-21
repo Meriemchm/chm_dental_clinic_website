@@ -4,7 +4,7 @@ import Appointment from "@/components/appointment/appointment";
 
 const BookAnAppointmentPage = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <HearderTitle title="Book an Appointment" url="Book an Appointment" />
       <Appointment />
     </div>

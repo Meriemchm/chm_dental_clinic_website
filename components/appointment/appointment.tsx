@@ -9,7 +9,7 @@ const Appointment = () => {
   const fadeup = useGsapFade("up");
   return (
     <div className="min-h-screen bg-white">
-      <Container className="py-24">
+      <Container className="pt-24">
         {" "}
         <div
           ref={fadeup}

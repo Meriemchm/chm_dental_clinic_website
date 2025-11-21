@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { Container } from "@/components/ui/container";
 import HearderTitle from "@/components/ui/hearderTitleSection";
 import React from "react";
@@ -9,7 +9,7 @@ import { useGsapFade } from "@/hooks/gsap-animations";
 const ContactUsPage = () => {
   const fadeup = useGsapFade("up");
   return (
-    <div>
+    <div className="overflow-hidden">
       <HearderTitle title="Contact Us" url="Contact Us" />
       <div className="min-h-screen bg-white">
         <Container className="py-24">

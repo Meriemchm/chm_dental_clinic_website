@@ -7,7 +7,7 @@ import React from "react";
 const ServicesContainer = () => {
   const fadeup = useGsapFade("up");
   return (
-    <div ref={fadeup} className="bg-white py-24">
+    <div ref={fadeup} className="bg-white pt-24">
       <Container>
         <div className="flex flex-col gap-4 items-center justify-center">
           <p className="uppercase text-black">Our Services</p>

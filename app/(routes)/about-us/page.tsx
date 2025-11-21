@@ -6,11 +6,11 @@ import React from "react";
 
 const AboutUsPage = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <HearderTitle title="About Us" url="About Us" />
 
       <div className="min-h-screen bg-white">
-        <Container className="py-24">
+        <Container className="pt-24">
           <About />{" "}
         </Container>{" "}
       </div>
