@@ -2,6 +2,7 @@
 import React from "react";
 import Button from "../ui/button";
 import { useGsapFade } from "@/hooks/gsap-animations";
+import Link from "next/link";
 
 export const ServiceHeader = () => {
   const fadeup = useGsapFade("up");
@@ -18,7 +19,9 @@ export const ServiceHeader = () => {
         </h2>
       </div>
 
-      <Button className="text-sm md:text-base">Explore All Services</Button>
+      <Link href='/services'>
+        <Button className="text-sm md:text-base">Explore All Services</Button>
+      </Link>
     </div>
   );
 };
