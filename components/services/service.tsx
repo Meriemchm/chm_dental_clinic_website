@@ -4,7 +4,7 @@ import { ServicesData } from "@/data/data";
 import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { useGsapFade } from "@/hooks/gsap-animations";
+import { useGsapFade } from "@/hooks/useGsapFade";
 
 const Service = () => {
   const fadeup = useGsapFade("up");

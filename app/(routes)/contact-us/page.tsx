@@ -4,7 +4,7 @@ import HearderTitle from "@/components/ui/hearderTitleSection";
 import React from "react";
 import ContactForm from "./components/contact-form";
 import ContactInfo from "./components/contact-info";
-import { useGsapFade } from "@/hooks/gsap-animations";
+import { useGsapFade } from "@/hooks/useGsapFade";
 import { ContactContainer } from "./components/contact-container";
 
 const ContactUsPage = () => {

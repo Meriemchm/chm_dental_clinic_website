@@ -8,7 +8,7 @@ import { ContactFormData, contactSchema } from "@/schemas/contactSchema";
 import InputField from "@/components/ui/InputField";
 import Button from "@/components/ui/button";
 import toast from "react-hot-toast";
-import { useGsapFade } from "@/hooks/gsap-animations";
+import { useGsapFade } from "@/hooks/useGsapFade";
 
 const ContactForm = () => {
   const fadeleft = useGsapFade("left");

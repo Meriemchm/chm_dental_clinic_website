@@ -3,7 +3,7 @@ import React from "react";
 import { Container } from "../ui/container";
 import AppointmentForm from "./appointmentForm";
 import AppointmentInfo from "./appointmentInfo";
-import { useGsapFade } from "@/hooks/gsap-animations";
+import { useGsapFade } from "@/hooks/useGsapFade";
 
 const Appointment = () => {
   const fadeup = useGsapFade("up");

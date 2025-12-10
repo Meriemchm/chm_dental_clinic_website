@@ -13,7 +13,7 @@ import {
   appointmentSchema,
 } from "@/schemas/appointmentSchema";
 import toast from "react-hot-toast";
-import { useGsapFade } from "@/hooks/gsap-animations";
+import { useGsapFade } from "@/hooks/useGsapFade";
 
 const AppointmentForm = () => {
   const fadeleft = useGsapFade("left");

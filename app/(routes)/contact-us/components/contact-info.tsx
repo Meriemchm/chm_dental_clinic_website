@@ -1,13 +1,16 @@
 "use client";
 import FooterColumn from "@/components/footer/footercolum";
 import SocialMediaIcons from "@/components/ui/socialMediaIcons";
-import { useGsapFade } from "@/hooks/gsap-animations";
+import { useGsapFade } from "@/hooks/useGsapFade";
 import React from "react";
 
 const ContactInfo = () => {
   const faderight = useGsapFade("right");
   return (
-    <div ref={faderight} className="bg-primary rounded-xl flex flex-col p-10 items-start justify-center space-y-12 text-lg md:text-xl">
+    <div
+      ref={faderight}
+      className="bg-primary rounded-xl flex flex-col p-10 items-start justify-center space-y-12 text-lg md:text-xl"
+    >
       <FooterColumn showFirstColumn={false} />
 
       <div>

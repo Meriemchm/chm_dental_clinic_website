@@ -3,7 +3,7 @@ import React from "react";
 import Button from "../ui/button";
 
 import Service from "./service";
-import { useGsapFade } from "@/hooks/gsap-animations";
+import { useGsapFade } from "@/hooks/useGsapFade";
 import { ServiceHeader } from "./service-header";
 
 const Services = () => {

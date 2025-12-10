@@ -1,7 +1,7 @@
-'use client'
+"use client";
 import Service from "@/components/services/service";
 import { Container } from "@/components/ui/container";
-import { useGsapFade } from "@/hooks/gsap-animations";
+import { useGsapFade } from "@/hooks/useGsapFade";
 import React from "react";
 
 const ServicesContainer = () => {

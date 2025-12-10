@@ -2,7 +2,7 @@ import { Container } from "@/components/ui/container";
 import React from "react";
 import ContactForm from "./contact-form";
 import ContactInfo from "./contact-info";
-import { useGsapFade } from "@/hooks/gsap-animations";
+import { useGsapFade } from "@/hooks/useGsapFade";
 
 export const ContactContainer = () => {
   const fadeup = useGsapFade("up");

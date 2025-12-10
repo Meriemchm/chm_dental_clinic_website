@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { AboutItems } from "@/data/data";
 import Button from "../ui/button";
-import { useGsapFade } from "@/hooks/gsap-animations";
+import { useGsapFade } from "@/hooks/useGsapFade";
 import Link from "next/link";
 
 const About = () => {

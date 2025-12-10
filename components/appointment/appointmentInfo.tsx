@@ -1,7 +1,7 @@
 import { FooterData } from "@/data/data";
 import React from "react";
 import Image from "next/image";
-import { useGsapFade } from "@/hooks/gsap-animations";
+import { useGsapFade } from "@/hooks/useGsapFade";
 
 const AppointmentInfo = () => {
   const faderight_1 = useGsapFade("right");

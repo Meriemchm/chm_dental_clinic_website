@@ -1,7 +1,7 @@
 "use client";
 import Button from "../ui/button";
 import Link from "next/link";
-import { useGsapFade } from "@/hooks/gsap-animations";
+import { useGsapFade } from "@/hooks/useGsapFade";
 import Image from "next/image";
 
 export const HeroLeft = () => {

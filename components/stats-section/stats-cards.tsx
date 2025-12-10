@@ -1,5 +1,5 @@
 "use client";
-import { useGsapFade } from "@/hooks/gsap-animations";
+import { useGsapFade } from "@/hooks/useGsapFade";
 import { useGsapCountUp } from "@/hooks/useGsapCountUp";
 import Image from "next/image";
 
