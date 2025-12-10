@@ -1,4 +1,4 @@
-import { FooterData } from "@/components/data/data";
+import { FooterData } from "@/data/data";
 import React from "react";
 
 interface FooterColumnProps {

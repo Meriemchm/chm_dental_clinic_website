@@ -7,6 +7,7 @@
   --primary: #1e3fff;
   --secondary: #0c1f41;
   --thirdary: #f0f9ff;
+  --fourthary: #f1f8ff;
 }
 
 @theme inline {
@@ -15,6 +16,7 @@
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-thirdary: var(--thirdary);
+  --color-fourthary: var(--fourthary);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

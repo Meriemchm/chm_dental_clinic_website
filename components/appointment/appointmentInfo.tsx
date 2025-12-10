@@ -1,4 +1,4 @@
-import { FooterData } from "@/components/data/data";
+import { FooterData } from "@/data/data";
 import React from "react";
 import Image from "next/image";
 import { useGsapFade } from "@/hooks/gsap-animations";

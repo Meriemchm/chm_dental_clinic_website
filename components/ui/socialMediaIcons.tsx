@@ -1,4 +1,4 @@
-import { SocialMediaData } from "@/components/data/data";
+import { SocialMediaData } from "@/data/data";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";

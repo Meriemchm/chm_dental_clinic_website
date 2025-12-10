@@ -8,7 +8,7 @@ import { useGsapFade } from "@/hooks/gsap-animations";
 const Appointment = () => {
   const fadeup = useGsapFade("up");
   return (
-    <div className="min-h-screen bg-white">
+    <div className="h-full bg-white">
       <Container className="pt-24">
         {" "}
         <div

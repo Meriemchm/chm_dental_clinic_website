@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { ServicesData } from "@/components/data/data";
+import { ServicesData } from "@/data/data";
 import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
