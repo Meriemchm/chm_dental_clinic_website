@@ -58,7 +58,7 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="p-6 bg-white rounded-2xl space-y-4"
+      className=" bg-white rounded-2xl space-y-4"
       ref={fadeleft}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

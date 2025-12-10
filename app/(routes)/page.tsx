@@ -14,7 +14,7 @@ const Home = () => {
         className="h-full bg-[linear-gradient(to_bottom,var(--fourthary)_0%,var(--fourthary)_50%,white_50%,white_100%)]
                   lg:bg-[linear-gradient(to_right,white_0%,white_50%,var(--fourthary)_50%,var(--fourthary)_100%)]"
       >
-        <Container className="py-16">
+        <Container className="py-24">
           <Hero />
         </Container>
       </div>
@@ -22,17 +22,16 @@ const Home = () => {
       <StatsSection />
 
       <div className="h-full bg-white">
-        <Container className="py-16">
+        <Container className="py-24">
           <About />{" "}
         </Container>{" "}
       </div>
 
       <div className="h-full bg-neutral-50">
-        <Container className="py-16">
+        <Container className="py-24">
           <Services />
         </Container>{" "}
       </div>
-      <Banner />
 
       <Appointment />
     </div>

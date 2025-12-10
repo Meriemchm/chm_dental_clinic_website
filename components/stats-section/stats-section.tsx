@@ -6,7 +6,7 @@ import { StatsData } from "@/data/StatsData";
 const StatsSection = () => {
   return (
     <div className="w-full ">
-      <Container className="w-full py-16">
+      <Container className="w-full py-4 md:py-16">
         <StatsCards stats={StatsData} />
       </Container>
     </div>

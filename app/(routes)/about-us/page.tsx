@@ -9,8 +9,8 @@ const AboutUsPage = () => {
     <div className="overflow-hidden">
       <HearderTitle title="About Us" url="About Us" />
 
-      <div className="min-h-screen bg-white">
-        <Container className="pt-24">
+      <div className="h-full bg-white">
+        <Container className="py-24">
           <About />{" "}
         </Container>{" "}
       </div>

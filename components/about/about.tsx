@@ -10,7 +10,7 @@ const About = () => {
   const fadeleft = useGsapFade("left");
   const faderight = useGsapFade("right");
   return (
-    <div className="flex md:flex-row flex-col-reverse gap-12 items-center justify-between md:gap-6">
+    <div className="flex md:flex-row flex-col-reverse gap-16 items-center justify-between md:gap-6">
       <div ref={fadeleft}>
         <Image
           src="/Images/about_us_picture_2.png"

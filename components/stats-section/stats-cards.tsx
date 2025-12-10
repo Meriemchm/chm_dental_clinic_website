@@ -15,15 +15,15 @@ export const StatsCards: React.FC<StatsCardsProps> = ({ stats }) => {
   const fadeUp = useGsapFade("up");
   const setCountRef = useGsapCountUp();
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 justify-center mx-auto items-center gap-6 md:gap-10">
+    <div className="grid grid-cols-2 md:grid-cols-4 justify-center mx-auto items-start gap-6 md:gap-10">
       {stats.map((stat, index) => {
         const stats_number = Number(stat.value);
 
         return (
-          <div key={index} className="w-full hover:scale-105 duration-200">
+          <div key={index} className="w-full  hover:scale-105 duration-200">
             <div
               className="
-          w-full flex flex-col gap-4 md:flex-row justify-center md:items-start items-center
+          w-full flex flex-col gap-4 md:flex-row justify-center items-center mx-auto
           p-6 md:py-8
         "
               ref={(el) => {
@@ -36,7 +36,7 @@ export const StatsCards: React.FC<StatsCardsProps> = ({ stats }) => {
                   alt={stat.label}
                   width={18}
                   height={18}
-                  className="h-auto w-auto object-contain"
+                  className="h-12 w-12 object-contain"
                 />
               </div>
               <div className="flex flex-col">
