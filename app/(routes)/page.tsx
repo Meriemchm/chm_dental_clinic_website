@@ -4,7 +4,6 @@ import Hero from "@/components/hero/hero";
 import About from "@/components/about/about";
 import Services from "@/components/services/services";
 import Appointment from "@/components/appointment/appointment";
-import { Banner } from "@/components/banner/banner";
 import StatsSection from "@/components/stats-section/stats-section";
 
 const Home = () => {
