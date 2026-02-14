@@ -31,6 +31,7 @@ const About = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ad
           molestias consectetur tempore voluptatem? Ipsum fuga delectus unde
           ipsam quasi, earum vero blanditiis accusantium odit quae? Qui possimus
+          molestiae blanditiis. Qui possimus
           molestiae blanditiis.
         </p>
 
